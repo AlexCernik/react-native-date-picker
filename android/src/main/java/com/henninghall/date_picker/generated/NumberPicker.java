@@ -25,6 +25,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.icu.text.DecimalFormatSymbols;
 import android.os.Build;
@@ -748,6 +749,7 @@ public class NumberPicker extends LinearLayout {
 
         mInputText.setRawInputType(InputType.TYPE_CLASS_NUMBER);
         mInputText.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        mInputText.setTypeface(Typeface.SANS_SERIF);
 
         // initialize constants
         ViewConfiguration configuration = ViewConfiguration.get(context);
